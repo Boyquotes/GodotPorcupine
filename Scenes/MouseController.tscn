@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Model/Controllers/MouseController.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/UI.tscn" type="PackedScene" id=2]
+
+[sub_resource type="GDScript" id=1]
+
+
+[node name="MouseController" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 320.362, 179.494 )
+current = true
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.0
+drag_margin_bottom = 0.0
+script = SubResource( 1 )
+
+[node name="UI" parent="Camera2D" instance=ExtResource( 2 )]
+margin_left = -391.0
+margin_top = -180.0
+margin_right = -327.0
+margin_bottom = -116.0
+rect_min_size = Vector2( 64, 64 )
+

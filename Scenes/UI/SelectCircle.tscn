@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Model/SelectCircle.gd" type="Script" id=1]
+[ext_resource path="res://Images/cursor-1.png" type="Texture" id=2]
+
+[node name="SelectCircle" type="Node2D"]
+
+z_index = 1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+position = Vector2( 0.0987759, 0.25305 )
+scale = Vector2( 2, 2 )
+z_index = 1
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Z Index" ]
+
+
